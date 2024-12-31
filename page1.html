@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> ¥°$_G@€£_$°¥~happy-new-year</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="logs\Capture.PNG" type="image/x-icon">
+      <link href="style1.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="feliz" >Happy new year</div>
+        <div class="ano_novo">
+          <span>2025</span>
+        </div>
+        <nav class="look">
+            <h2 class="msg">Entre tes informations pour reçevoir les voeux de fin d'année de la part de G@_L-$ 😇 </h2> 
+            <form  id="monFormulaire" method="post" touch-action="manipulation">
+              <ul>
+                <il>
+                  <div class="champ">
+                  <label for="nom">Nom&nbsp;<span aria-label="required">*</span>:</label>
+                  <input type = "text" id="nom" name="nom"   placeholder="Nom avec le quel je t'appelle souvent" touch-action="manipulation" touch-callout="none" inputmode="text" autofocus required/>
+                  <span id="error"></span>
+                    <br/>
+                  </div>
+                </il>
+                <il>
+                  <div class="champ">
+                  <label for="numero">Numéro_téléphone_(+237)&nbsp;<span  aria-label="required">*</span>:</label>
+                  <input type="tel" id="number" name="number" maxlength="9" minlength="9" pattern="[0-9 ]+"  placeholder="6XXXXXXXX (whatsapp !)" inputmode="tel"  required />
+                  <span id="error1"></span>
+                </div>
+                </il>
+              </ul>
+            <button type="submit" touch-action="manipulation" role="button" >
+               Envoyer
+            </button>
+            </form> 
+           
+      <script>
+      let monFormulaire = document.getElementById("monFormulaire");
+       monFormulaire.addEventListener('submit', function(e){
+    let myInput = document.getElementById('nom');
+    
+    let myReger = /[A-Z]+$/;
+    let myInput1 = document.getElementById('number');
+    const valeurTel = myInput1.value ;
+    let variableTest = "false";
+
+    if(myReger.test(myInput.value) == false){
+    let myError = document.getElementById('error');
+    myError.innerHTML = "Le nom doit être entièrement en majuscule et ne doit  pas contenir des chiffres  et des espaces . ";
+    myError.style.color = 'red';
+    myError.style.fontSize = '25px'
+    e.preventDefault();
+    } else if(!valeurTel.startsWith("6")){
+        let myError1 = document.getElementById('error1');
+        myError1.innerHTML = "Le numéro doit commencé par 6";
+        myError1.style.color = 'red';
+        myError1.style.fontSize = '25px'
+        e.preventDefault();
+       } else{   
+       window.open("page2.html");
+       }
+            });  
+            </script>
+             <script src="app.js"> </script> 
+           
+        </nav>
+        <div class="fogos">
+            <div class="f1">
+              <span><i></i></span>
+              <span><i></i></span>
+              <span><i></i></span>
+            </div>
+            <div class="f2">
+              <span><i></i></span>
+              <span><i></i></span>
+              <span><i></i></span>
+            </div>
+            <div class="f3">
+              <span><i></i></span>
+              <span><i></i></span>
+              <span><i></i></span>
+            </div>
+            <div class="f4">
+              <span><i></i></span>
+              <span><i></i></span>
+              <span><i></i></span>
+            </div>
+          </div>
+          
+    </body> 
+
+</html>
