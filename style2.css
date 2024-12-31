@@ -151,7 +151,7 @@ button[type ="submit"]:hover{
 .ano_novo{
   position: absolute;
   font-size: 90px;
-  top: 550px;
+  top: 570px;
   left: 250px;
   height: 100%;
   display: flex;
